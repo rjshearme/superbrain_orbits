@@ -1,0 +1,64 @@
+body {
+  background-color: #30002f;
+  color: white;
+  padding: 0px;
+  margin: 0px;
+}
+#ctrlPan {
+  background-color: #51024f;
+  color: white;
+  float: left;
+  height: 100vh;
+  width: 30%;
+}
+
+.no-block {
+  display: inline;
+}
+
+button {
+  width: 100%;
+}
+
+.hidden {
+  visibility: hidden;
+  height: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+.revrange{
+    transform: rotateY(180deg);
+}
+
+.slider {
+  -webkit-appearance: none;  /* Override default CSS styles */
+  appearance: none;
+  width: 99%; /* Full-width */
+  height: 25px; /* Specified height */
+  background: #d3d3d3; /* Grey background */
+  outline: none; /* Remove outline */
+  opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+  -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+  appearance: none;
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #efb22f; /* orange background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+  width: 25px; /* Set a specific slider handle width */
+  height: 25px; /* Slider handle height */
+  background: #4CAF50; /* Green background */
+  cursor: pointer; /* Cursor on hover */
+}
+
+.slider-block {
+  padding: 5px 0px;
+  display: block;
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SuperBrain</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="p5.min.js"></script>
+    <script src="p5.dom.min.js"></script>
+    <script src="jquery.js"></script>
+    <script src="Orbit.js"></script>
+    <script src="runner.js"></script>
+  </head>
+  <body>
+    <nav id="ctrlPan">
+      <div class="no-block"> <input id="inputRadio" type="radio" name="mode" value="input"> Input </input> </div>
+      <div class="no-block"> <input id="drawRadio"  type="radio" name="mode" value="draw"> Draw </input> </div>
+      <!-- <div class="no-block"> <input id="guessRadio" type="radio" name="mode" value="guess"> Guess </input> </div> -->
+      <div class="no-block"> <input id="playRadio"  type="radio" name="mode" value="play"> Play </input> </div>
+      <div class="no-block"> <input id="planetsRadio"  type="radio" name="mode" value="play"> Planets </input> </div>
+
+      <div class="control slider-block hidden drawing input">
+        <em id="R1text">Radius 1 = NA</em>
+        <input type="range" id="R1" class = "slider" name="radius 1" min="1" max="30" value = "15">
+      </div>
+
+      <div class="control slider-block hidden drawing input">
+        <em id="R2text">Radius 2 = NA</em>
+        <input type="range" id="R2" class = "slider" name="radius 2" min="1" max="30" value = "30">
+      </div>
+
+      <div class="control slider-block hidden drawing input">
+        <em id="P1text">Period 1 = NA</em>
+        <input type="range" id="P1" class="revrange slider" name="speed 1" min="1" max="20" value = "8.7" step="0.01">
+      </div>
+
+      <div class="control slider-block hidden drawing input play planets">
+        <em id="P2text">Period 2 = NA</em>
+        <input type="range" id="P2" class="revrange slider" name="speed 2" min="1" max="20" value = "15.8" step="0.01">
+      </div>
+
+      <!-- <div class="control guess hidden">
+        <input type="text" placeholder="Your guess for radius 1">
+      </div>
+
+      <div class="control guess hidden">
+        <input type="text" placeholder="Your guess for radius 2">
+      </div>
+
+      <div class="control guess hidden">
+        <input type="text" placeholder="Your guess for period 1">
+      </div>
+
+      <div class="control guess hidden">
+        <input type="text" placeholder="Your guess for period 2">
+      </div> -->
+
+      <div class="control slider-block hidden drawing guess play">
+        <em id="numLoopsText">Num loops = NA</em>
+        <input type="range" id="num-loops" class = "slider" value = "7540" name="num-loops" min="1" max="10000">
+      </div>
+
+      <div class="control slider-block hidden input">
+        <em id="drawSpeedText">Drawing speed = NA</em>
+        <input type="range" id="draw-speed" class = "slider" value = "1" name="num-loops" min="1" max="100">
+      </div>
+
+
+      <!-- <button type="button" class="control play hidden" id="playSwitch">View orbits</button> -->
+
+      <!-- <button type="button" class="control guess hidden" name="Show" onclick="input()">Reveal Answer</button> -->
+    </nav>
+
+    <script src="sketch.js">
+
+    </script>
+  </body>
+</html>
